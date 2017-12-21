@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add/add",
+    "pages/add/preview",
+    "pages/vote/vote"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#db9864",
+    "navigationBarTitleText": "约会议",
+    "navigationBarTextStyle": "light"
+  }
+}

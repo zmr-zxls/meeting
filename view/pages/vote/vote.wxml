@@ -1,0 +1,260 @@
+<!--pages/vote/vote.wxml-->
+<!-- start title  -->
+<view class='title'>
+  <view class='title-content'>
+    <text class='title-txt'>老同学相约九八</text>
+  </view>
+  <view class='host-info'>
+    <image src='/images/avatar3.jpg' class='host-avatar'></image>
+    <text class='host-name'>陈海军</text>
+    <text class='end-time'>12月18日结束</text>
+    <text class='host-info-status'>投票中</text>
+  </view>
+</view>
+<!-- end title  -->
+<!-- start 信息概览 -->
+<view class='base-info'>
+  <view class='item-flex'>
+    <view class='item-flex__item' bindtap='showYaoQingModal'>
+      <text class='big-number'>17</text>
+      <view>邀请人数</view>
+    </view>
+    <view class='item-flex__item' bindtap="showYiTouModal">
+      <text class='big-number'>16</text>
+      <view>未投人数</view>
+    </view>
+    <view class='item-flex__item' bindtap='showMeiKongModal'>
+      <text class='big-number'>1</text>
+      <view>没空参会</view>
+    </view>
+  </view>
+</view>
+<!-- end 信息概览 -->
+<!-- start item  -->
+<view class='item'>
+  <view class='item-title'>
+    <view class='item-flex'>
+      <text class='item-flex__item'>2017年12月15日</text>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="0" color="#00aa92"/>
+        </label>
+      </view>
+    </view>
+  </view>
+  <view class='item-content'>
+    <view class='item-flex'>
+      <view class='item-flex__item'>
+        <view class='time-point'>8:00 - 9:00</view>
+        <view class='guest-list'>
+          <view>
+            <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>树</text>
+          </view>
+          <view>
+            <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿军</text>
+          </view>
+          <view>
+            <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿彬</text>
+          </view>
+          <view>
+            <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>传奇</text>
+          </view>
+          <view>
+            <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>铅总</text>
+          </view>
+          <view>
+            <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>手指</text>
+          </view>
+          <view>
+            <text style="font-size:14px;color:#b0695a;margin-left:10px;">6人</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="01" disabled='true' />
+        </label>
+        <text style='font-size:12px;color:#cc333b;display:block;'>时间冲突</text>
+      </view>
+    </view>
+    <view class='item-flex'>
+      <view class='item-flex__item'>
+        <view class='time-point'>14:00 - 17:00</view>
+        <view class='guest-list'>
+          <view>
+            <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿彬</text>
+          </view>
+          <view>
+            <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿军</text>
+          </view>
+          <view>
+            <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>传奇</text>
+          </view>
+          <view>
+            <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>铅总</text>
+          </view>
+          <view>
+            <text style="font-size:14px;color:#b0695a;margin-left:10px;">4人</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="01"  color="#00aa92"/>
+        </label>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='item'>
+  <view class='item-title'>
+    <view class='item-flex'>
+      <text class='item-flex__item'>2017年12月17日</text>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="0"  color="#00aa92"/>
+        </label>
+      </view>
+    </view>
+  </view>
+  <view class='item-content'>
+    <view class='item-flex'>
+      <view class='item-flex__item'>
+        <view class='time-point'>8:00 - 9:00</view>
+        <view class='guest-list'>
+          <view>
+            <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿彬</text>
+          </view>
+          <view>
+            <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿军</text>
+          </view>
+          <view>
+            <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>传奇</text>
+          </view>
+          <view>
+            <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>手指</text>
+          </view>
+          <view>
+            <text style="font-size:14px;color:#b0695a;margin-left:10px;">4人</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="01"  color="#00aa92"/>
+        </label>
+      </view>
+    </view>
+    <view class='item-flex selected'>
+      <view class='item-flex__item'>
+        <view class='time-point'>14:00 - 17:00</view>
+        <view class='guest-list'>
+          <view>
+            <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>手指</text>
+          </view>
+          <view>
+            <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>阿军</text>
+          </view>
+          <view>
+            <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+            <text class='guest-name'>铅总</text>
+          </view>
+          <view>
+            <text style="font-size:14px;color:#b0695a;margin-left:10px;">3人</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-flex__end'>
+        <label class="checkbox">
+          <checkbox value="01"  color="#00aa92" checked="true"/>
+        </label>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- end item  -->
+<view class='button-area'>
+  <view class="item-flex item-flex__btn-group">
+    <view class='item-flex__item'>
+      <button type="warn" size="default" bindtap='bindNoTap' hover-class="hover-class"> 没空参加 </button>
+    </view>
+    <view class='item-flex__item'>
+      <button type="primary" size="default" bindtap='bindYesTap' hover-class="hover-class"> 有空参加 </button>
+    </view>
+  </view>
+</view>
+
+
+<!-- start modal 弹窗  -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">{{title}}</view>
+  <view class="modal-content">
+    <!-- start 人员列表 -->
+    <view class='guest-list guest-list-big'>
+      <view>
+        <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>阿彬</text>
+      </view>
+      <view>
+        <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>阿军</text>
+      </view>
+      <view>
+        <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>传奇</text>
+      </view>
+      <view>
+        <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>铅总</text>
+      </view>
+      <view>
+        <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>手指</text>
+      </view>
+      <view>
+        <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>树</text>
+      </view>
+      <view>
+        <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>树2</text>
+      </view>
+      <view>
+        <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>手指</text>
+      </view>
+      <view>
+        <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>树</text>
+      </view>
+      <view>
+        <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+        <text class='guest-name'>树2</text>
+      </view>
+    </view>
+    <!-- end 人员列表 -->
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel" wx:if="{{showCancel}}">取消</view>
+    <view class="btn-cancel" bindtap="onTixing" wx:if="{{showTixing}}">提醒</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+<!-- end modal 弹窗 -->

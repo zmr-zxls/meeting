@@ -1,0 +1,47 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+	"appid": "wx4c9e0c5d41cb6cf8",
+	"projectname": "huiyue",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "添加页面",
+					"pathName": "pages/add/add",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预览页面",
+					"pathName": "pages/add/preview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "投票页面",
+					"pathName": "pages/vote/vote",
+					"query": ""
+				}
+			]
+		}
+	}
+}

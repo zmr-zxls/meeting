@@ -1,0 +1,214 @@
+<!--pages/add/add.wxml-->
+<!-- start title  -->
+<view class='title-box'>
+  <input placeholder-style="color:#FFF" placeholder="请输入会议标题" />
+</view>
+<!-- end title -->
+
+<!-- start calendar  -->
+<view class='block-box' style='margin-top:0;'>
+  <view class='block-title'>请选定日期（2017/12/18）</view>
+  <view class='calendar'>
+    <view class='flex-item'>
+      <view class='flex-item__item'>
+        <text class='week'>周一</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周二</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周三</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周四</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周五</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周六</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='week'>周日</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-item__item'>
+        <text class='day current-day'>18</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>19</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>20</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>21</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>22</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>23</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>24</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-item__item'>
+        <text class='day'>25</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>26</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>27</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>28</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>29</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>30</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>31</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-item__item'>
+        <text class='day'>1</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>2</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>3</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>4</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>5</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>6</text>
+      </view>
+      <view class='flex-item__item'>
+        <text class='day'>7</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- end calendar  -->
+
+<!-- start choose time  -->
+<view class='block-box' style='margin-top:0;padding-bottom:0;'>
+  <view class='block-title'>请添加时间段
+    <icon type="cancel" size="32" color="#b0695a" class='right-icon icon-add' bindtap='addNewTime' />
+  </view>
+  <view class='time'>
+    <view class='flex-item time-item'>
+      <view style='min-width:112rpx;'>
+        <picker mode="time" value="{{time}}" start="8:00" end="24:00" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+      <view>-</view>
+      <view style='min-width:112rpx;'>
+        <picker mode="time" value="{{time2}}" start="9:00" end="24:00" bindchange="bindTimeChange2">
+          <view class="picker">
+            {{time2}}
+          </view>
+        </picker>
+      </view>
+      <view style='text-align:right;' class='flex-item__item'>
+        <icon type="cancel" size="32" color="red" class="icon-delete"/>
+      </view>
+    </view>
+    <view class='flex-item time-item' wx:if="{{addNewTime}}">
+      <view style='min-width:112rpx;'>
+        <picker mode="time" value="{{time}}" start="8:00" end="24:00" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+      <view>-</view>
+      <view style='min-width:112rpx;'>
+        <picker mode="time" value="{{time2}}" start="9:00" end="24:00" bindchange="bindTimeChange2">
+          <view class="picker">
+            {{time2}}
+          </view>
+        </picker>
+      </view>
+      <view style='text-align:right;' class='flex-item__item'>
+        <icon type="cancel" size="32" color="red" class="icon-delete"/>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- end choose time  -->
+
+<!-- start choose address  -->
+<view class='block-box'>
+  <view class='block-title'>请填写会议地址</view>
+  <view class='address'>
+    <input placeholder="请填写会议举办地点" />
+  </view>
+</view>
+<!-- end choose address  -->
+
+<!-- start choose end time -->
+<view class='block-box'>
+  <view class='block-title'>请选择反馈截止日期</view>
+  <view class="end-time">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-12-31" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+</view>
+<!-- end choose  end time -->
+
+<!-- start choose persons -->
+<view class='block-box'>
+  <view class='block-title'>请选择参会人</view>
+  <view class='persons'>
+    <view class='person-list'>
+      <view class='person-list-item' bindlongpress='showDeleteBtn'>
+        <image src='/images/avatar2.jpg' class='person-avatar'></image>
+        <view class='delete-btn {{ selected ? "isSelected" : ""}}' wx:if="{{showDeleteBtn}}" bindtap='selectPersonToDelete'><icon type="success" size="32" class="icon-selecte"/></view>
+      </view>
+      <view class='person-list-item' bindlongpress='showDeleteBtn'>
+        <image src='/images/avatar3.jpg' class='person-avatar'></image>
+        <view class='delete-btn {{ selected ? "isSelected" : ""}}' wx:if="{{showDeleteBtn}}" bindtap='selectPersonToDelete'><icon type="success" size="32" class="icon-selecte"/></view>
+      </view>
+      <view class='person-list-item' bindlongpress='showDeleteBtn'>
+        <image src='/images/avatar4.jpg' class='person-avatar'></image>
+        <view class='delete-btn {{ selected ? "isSelected" : ""}}' wx:if="{{showDeleteBtn}}" bindtap='selectPersonToDelete'><icon type="success" size="32" class="icon-selecte"/></view>
+      </view>
+      <view class='person-list-item' bindlongpress='showDeleteBtn'>
+        <image src='/images/avatar5.jpg' class='person-avatar'></image>
+        <view class='delete-btn {{ selected ? "isSelected" : ""}}' wx:if="{{showDeleteBtn}}" bindtap='selectPersonToDelete'><icon type="success" size="32" class="icon-selecte"/></view>
+      </view>
+      <view class='person-list-item'>
+        <view class='person-plus'></view>
+      </view>
+      <view class='person-list-item' wx:if="{{showMinusBtn}}" bindtap='deleteSelected'>
+        <view class='person-minus'></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- end choose persons -->
+
+<view class='button-area'>
+  <button type="primary" size="default" bindtap='bindViewTap'> 发 布 </button>
+</view>

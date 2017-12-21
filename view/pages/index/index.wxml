@@ -1,0 +1,264 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="add-new-box">
+    <view class='add-new' bindtap='bindAddTap'>
+      <view class='icon-plus'></view>
+      <text>向好友发布一条会议邀请吧</text>
+    </view>
+    <view class='add-new add-new-normal' bindtap='bindAddTap'>
+      <view class='icon-plus'></view>
+      <text class="user-motto">向好友发布一条会议邀请吧</text>
+    </view>
+    <view class='item item-yellow' bindtap='bindVoteTap'>
+      <image src='/images/avatar5.jpg' class='host-avatar'></image>
+      <text class='host-name'>张永铅</text>
+      <text class='item-title'>下周开个产品进度反馈会议</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿彬</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿军</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>铅总</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>手指</text>
+        </view>
+        <view>
+          <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>树</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+          <text class='guest-news'></text>
+        </view>
+      </view>
+    </view>
+    <view class='item' bindtap='bindVoteTap'>
+      <image src='/images/avatar3.jpg' class='host-avatar'></image>
+      <text class='host-name'>陈海军</text>
+      <text class='item-title'>老同学聚会咯~~</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿彬</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿军</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>铅总</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>手指</text>
+        </view>
+        <view>
+          <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>树</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+          <text class='guest-news'></text>
+        </view>
+      </view>
+    </view>
+    <view class='item' bindtap='bindVoteTap'>
+      <image src='/images/avatar.jpg' class='host-avatar'></image>
+      <text class='host-name'>于传奇</text>
+      <text class='item-title'>周末去公司后面海边钓鱼</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿彬</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿军</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>铅总</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>手指</text>
+        </view>
+        <view>
+          <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>树</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+          <text class='guest-news'></text>
+        </view>
+      </view>
+      <view class='item-status'><image src='/images/icon_voted.png'></image></view>
+    </view>
+    <view class='item' bindtap='bindVoteTap'>
+      <image src='/images/avatar2.jpg' class='host-avatar'></image>
+      <text class='host-name'>谢先彬</text>
+      <text class='item-title'>什么时候出去玩</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿彬</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>阿军</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>铅总</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>手指</text>
+        </view>
+        <view>
+          <image src='/images/avatar7.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>树</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+          <text class='guest-news'></text>
+        </view>
+      </view>
+      <view class='item-status'><image src='/images/icon_no_time.png'></image></view>
+    </view>
+  </view>
+  <!-- start history -->
+  <view class='history-box'>
+    <image src='/images/no-history.png' class='no-result'></image>
+    <text class='theme-color'>{{noHistoryText}}</text>
+  </view>
+
+  <view class='history-box'>
+    <text class='gray-color'><text>{{historyText}}</text></text>
+    <view class='item item-yellow {{ isDeleted ? "fadeOutUp" : ""}}' wx:if="{{showItem}}" bindtap='bindVoteTap' bindlongpress='showActionSheet'>
+      <image src='/images/avatar5.jpg' class='host-avatar'></image>
+      <text class='host-name'>张永铅</text>
+      <text class='item-title'>老同学聚会咯~~</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>谢先彬</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>陈海军</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>于传奇</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>铅总</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>林晓霞</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+
+        </view>
+      </view>
+      <view class='item-status'><image src='/images/icon_success.png'></image></view>
+    </view>
+    <view class='item' bindtap='bindVoteTap' bindlongpress='showActionSheet'>
+      <image src='/images/avatar2.jpg' class='host-avatar'></image>
+      <text class='host-name'>阿彬哥</text>
+      <text class='item-title'>为我老婆开个生日排队</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>binssd</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>QDSF</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>hhhh</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>werw</text>
+        </view>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>sdfd</text>
+        </view>        
+      </view>
+      <view class='item-status'><image src='/images/icon_fail.png'></image></view>
+    </view>
+    <view class='item' bindtap='bindVoteTap' bindlongpress='showActionSheet'>
+      <image src='/images/avatar6.jpg' class='host-avatar'></image>
+      <text class='host-name'>林晓霞</text>
+      <text class='item-title'>相约K-BOX，相约唐家</text>
+      <view class='guest-list'>
+        <view>
+          <image src='/images/avatar6.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>顾帮</text>
+        </view>
+        <view>
+          <image src='/images/avatar4.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>英雄无敌</text>
+        </view>
+        <view>
+          <image src='/images/avatar3.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>vvchuanqi</text>
+        </view>
+        <view>
+          <image src='/images/avatar5.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>ycq</text>
+        </view>
+        <view>
+          <image src='/images/avatar2.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>addd</text>
+        </view>
+        <view>
+          <image src='/images/avatar.jpg' class='guest-avatar'></image>
+          <text class='guest-name'>avatar</text>
+        </view>
+        <view>
+          <image src='/images/avatar-more.png' class='guest-avatar'></image>
+        </view>
+      </view>
+      <view class='item-status'><image src='/images/icon_success.png'></image></view>
+    </view>
+  </view>
+  <!-- end history  -->
+</view>
