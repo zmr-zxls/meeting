@@ -1,0 +1,265 @@
+/**index.wxss**/
+
+.add-new-box {
+  display: block;
+  padding: 15px;
+  background-color: #f7eadb;
+}
+
+.icon-plus {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  border: 1px solid #b0695a;
+  border-radius: 100%;
+  position: relative;
+}
+
+.icon-plus:before, .icon-plus:after {
+  position: absolute;
+  content: "";
+}
+
+.icon-plus:before {
+  width: 32px;
+  height: 1px;
+  border-top: 2px solid #b0695a;
+  left: 8px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.icon-plus:after {
+  width: 1px;
+  height: 32px;
+  border-left: 2px solid #b0695a;
+  left: 50%;
+  top: 8px;
+  margin-left: -1px;
+}
+
+.add-new {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #b0695a;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(219, 152, 100, 0.3);
+}
+
+.add-new:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 2px 0px rgba(219, 152, 100, 0.3);
+}
+
+.add-new-normal {
+  text-align: left;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.add-new-normal .icon-plus {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -16px;
+  height: 32px;
+  width: 32px;
+}
+
+.add-new-normal .icon-plus:before {
+  width: 16px;
+}
+
+.add-new-normal .icon-plus:after {
+  height: 16px;
+}
+
+.history-box {
+  padding: 15px;
+}
+
+.history-box .theme-color, .history-box .gray-color {
+  text-align: center;
+  font-size: 17px;
+  display: block;
+}
+
+.history-box .gray-color {
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.history-box .gray-color text {
+  padding: 4px 10px;
+  background-color: #fbf7f4;
+}
+
+.history-box .gray-color::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  border-top: 1px solid #ddd;
+  margin-top: -1px;
+}
+
+.history-box .gray-color::before {
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.no-result {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  margin-top: 50px;
+}
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;    
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    position: absolute;
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-duration:0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #b0695a;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(219, 152, 100, 0.3);
+  position: relative;
+  z-index: 1;
+  min-height: 66px;
+  margin-top: 10px;
+}
+.history-box .item{opacity: .8;}
+.item-status {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.item-status image {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.item:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 2px 0px rgba(219, 152, 100, 0.3);
+}
+
+.item-yellow {
+  background-color: #fffcd4;
+}
+.item-yellow:active{
+  background-color: #fff5d4;
+}
+.host-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.host-name {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  text-align: center;
+  width: 86px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.item-title {
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 70px;
+  position: relative;
+  top: -5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.guest-list {
+  display: flex;
+  padding-left: 70px;
+}
+
+.guest-list view {
+  position: relative;
+}
+
+.guest-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.guest-name {
+  display: block;
+  text-align: center;
+  width: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #999;
+}
+
+.guest-news {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #f00;
+  border-radius: 100%;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,305 @@
+/* pages/add/add.wxss */
+
+.block-box {
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 0px;
+  color: #b0695a;
+  text-align: center;
+  padding: 10px 15px 10px;
+  box-shadow: 0px 2px 6px 0px rgba(219, 152, 100, 0.3);
+}
+
+.block-box .block-title {
+  border-bottom: 1px solid #e2dbd7;
+  padding-bottom: 8px;
+  text-align: left;
+  font-size: 12px;
+  position: relative;
+  color: #beb7b3;
+}
+
+.block-title .right-icon {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+/* start title */
+
+.title-box {
+  background-color: #b1695a;
+  padding: 15px 15px 5px;
+  margin: 0;
+}
+
+.title-box input {
+  border: 1px solid transparent;
+  border-bottom-color: #fff;
+  color: #fff;
+  padding-bottom: 4px;
+}
+
+/* end title  */
+
+/* start calendar */
+
+.calendar {
+  position: relative;
+}
+
+.calendar:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #e2dbd7;
+  height: 1px;
+  transform: scale(1, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.calendar .flex-item:last-child .flex-item__item .day {
+  border-bottom: none;
+}
+
+.week {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #beb7b3;
+  position: relative;
+}
+
+.week:after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #e2dbd7;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  transform: scale(0.5, 1);
+}
+
+.day {
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+.day:before, .day:after {
+  content: "";
+  position: absolute;
+}
+
+.day:before {
+  border-top: 1px solid #e2dbd7;
+  height: 1px;
+  transform: scale(1, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.day:after {
+  border-right: 1px solid #e2dbd7;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  transform: scale(0.5, 1);
+}
+
+.calendar .flex-item .flex-item__item {
+  position: relative;
+}
+
+.calendar .flex-item .flex-item__item:first-child:before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #e2dbd7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  transform: scale(0.5, 1);
+}
+
+.calendar .flex-item .flex-item__item:last-child:after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #e2dbd7;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  transform: scale(0.5, 1);
+}
+
+.day:active, .select {
+  background-color: #b1695a;
+  color: #fff;
+}
+
+.current-day, .current-day.select {
+  background-color: #db9864;
+  color: #fff;
+}
+
+/* end calendar  */
+
+/* start choose time  */
+
+.time {
+  position: relative;
+}
+
+.time-item {
+  display: flex;
+  padding: 10px 0 8px 0;
+  height: 32px;
+  align-items: center;
+  position: relative;
+  font-size:20px;
+}
+
+.time-item + .time-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #e2dbd7;
+  transform: scale(1, 0.5);
+}
+
+.time-item .flex-item {
+  text-align: left;
+}
+
+.icon-add {
+  transform: rotate(45deg);
+}
+.icon-add .wx-icon-cancel{
+  border-radius: 100%;}
+.icon-add:active .wx-icon-cancel {
+  background-color: #b1695a;
+  transition: all 0.2s;
+}
+
+.icon-add:active .wx-icon-cancel:before {
+  color: #fff;
+  transform: scale(1.2);
+}
+.icon-delete .wx-icon-cancel{
+  border-radius: 100%;}
+.icon-delete:active .wx-icon-cancel {
+  background-color: #e64340;
+  transition: all 0.2s;
+}
+
+.icon-delete:active .wx-icon-cancel:before {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* end choose time  */
+
+/* start choose address  */
+
+.address {
+  padding-top: 10px;
+}
+
+.address input {
+  font-size:18px;
+  text-align: left;
+}
+
+/* end choose address  */
+
+/* start choose end time  */
+
+.end-time {
+  text-align: left;
+  padding-top: 8px;
+  font-size:20px;
+}
+
+/* end choose end time  */
+
+/* start choose persons  */
+
+.persons {
+  padding-top: 10px;
+}
+
+.person-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.person-list-item {
+  position: relative;
+  width: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.person-list-item image {
+  display: block;
+  height: 46px;
+  width: 46px;
+}
+
+.person-plus,.person-minus {
+  position: relative;
+  border: 1px solid #b0695a;
+  height: 46px;
+  width: 46px;
+}
+
+.person-plus:active,.person-minus:active {
+  background-color: #fbf4ef;
+}
+
+.person-plus:before, .person-plus:after,.person-minus:before {
+  content: "";
+  position: absolute;
+}
+
+.person-plus:before {
+  width: 32px;
+  height: 1px;
+  border-top: 2px solid #b0695a;
+  left: 8px;
+  top: 50%;
+  margin-top: -1px;
+}
+.person-minus:before{
+  width: 32px;
+  height: 1px;
+  border-top: 2px solid #b0695a;
+  left: 8px;
+  top: 50%;
+  margin-top: -1px;
+}
+.person-plus:after {
+  width: 1px;
+  height: 32px;
+  border-left: 2px solid #b0695a;
+  left: 50%;
+  top: 8px;
+  margin-left: -1px;
+}
+.delete-btn{background-color:rgba(0,0,0,.7);left:0;right:0;bottom:0;top:0;width:46px;height:46px;position: absolute;}
+.delete-btn .icon-selecte{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)}
+.delete-btn .icon-selecte .wx-icon-success:before{color:#999;}
+.isSelected  .icon-selecte .wx-icon-success:before{color:#00aa92;}
+/* end choose persons  */
